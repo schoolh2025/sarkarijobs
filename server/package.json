@@ -7,9 +7,7 @@
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "lint": "eslint . --ext .ts",
-    "test": "jest",
-    "seed": "ts-node src/scripts/seed.ts"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "axios": "^1.6.2",
